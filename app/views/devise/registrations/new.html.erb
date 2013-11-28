@@ -1,27 +1,45 @@
-<h2>Sign up</h2>
-
-<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+<div class="row">
+<div class="span8">
+		<img src="http://cambelt.co/620x300" alt="">
+		<h2>Signing up is easy and fast.</h2>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		</p>
+		<div class="row">
+			<div class="span4"><h3>Subheading</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				</p>
+			</div>
+			<div class="span4"><h3>Subheading</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="span4">
+		<%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), html: {class: "well"}) do |f| %>
   <%= devise_error_messages! %>
 	
-	<div><%= f.label :first_name %><br />
-  <%= f.text_field :first_name %></div>
-  
-  <div><%= f.label :last_name %><br />
-  <%= f.text_field :last_name %></div>
-
-  <div><%= f.label :profile_name %><br />
-  <%= f.text_field :profile_name %></div>
-
-  <div><%= f.label :email %><br />
-  <%= f.email_field :email, :autofocus => true %></div>
-
-  <div><%= f.label :password %><br />
-  <%= f.password_field :password %></div>
-
-  <div><%= f.label :password_confirmation %><br />
-  <%= f.password_field :password_confirmation %></div>
-
-  <div><%= f.submit "Sign up" %></div>
-<% end %>
-
+	<fieldset>
+		<legend>Sign up</legend>
+		<%= f.input :first_name %>
+		<%= f.input :last_name %>
+		<%= f.input :profile_name %>
+		<%= f.input :email %>
+		<%= f.input :password %>
+		<%= f.input :password_confirmation %>
+		<%= f.submit "Sign up" %>
+	<% end %>
+	</fieldset>
+	
 <%= render "devise/shared/links" %>
+	</div>
+</div>
+
+

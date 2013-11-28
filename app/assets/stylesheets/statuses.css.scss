@@ -13,13 +13,19 @@
 .status .admin {
 	display: none;
 }
-.status.hover {
-	background: #fafafa;
-}
-.status.hover .admin {
-	display: inline;
-}
 
-// .status:hover .admin {
+// ## Alternate Javascript implementation to the code below. 
+// .status.hover {
+// 	background: #fafafa;
+// }
+// .status.hover .admin {
 // 	display: inline;
 // }
+
+.status:hover {
+	background: #fafafa;
+}
+
+.status:hover .admin {
+	display: inline;
+}
