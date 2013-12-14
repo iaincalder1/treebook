@@ -3,3 +3,9 @@ iain:
   last_name: "Calder"
   email: "iaincalder@me.com"
   profile_name: "icalder"
+
+eric:
+  first_name: "Eric"
+  last_name: "Calder"
+  email: "ericcalder2@me.com"
+  profile_name: "ecalder"
